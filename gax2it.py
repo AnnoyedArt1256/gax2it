@@ -729,7 +729,7 @@ for song_id in range(len(song_settings)):
         insfile.extend([0]*12)
         insfile.append(0)
         insfile.append(64)
-        insfile.append(has_loop<<4)
+        insfile.append(has_loop<<4|1)
         insfile.append(64)
 
         str_ins = "sample"+str(s)
